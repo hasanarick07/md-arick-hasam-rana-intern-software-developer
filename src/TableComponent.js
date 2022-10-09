@@ -15,8 +15,8 @@ const TableComponent = () => {
   const search = data => {
     return data.filter(
       result =>
-        result.name.toLowerCase().includes(get) ||
-        result.email.toLowerCase().includes(get)
+        result.name.toLowerCase().includes(get.toLowerCase()) ||
+        result.email.toLowerCase().includes(get.toLowerCase())
     );
   };
 
